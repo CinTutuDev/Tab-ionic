@@ -1,0 +1,30 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>
+      historial
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="enviarCorreo()" color="primary">
+        <ion-icon name="send" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list>
+
+    <ion-item *ngFor="let reg of dataLocalScan.guardados"
+              (click)="abrirReg(reg)"
+              detail>
+      <ion-icon slot="start" name="globe"></ion-icon>
+      <ion-label>http/:jdjsdkjasjda</ion-label>
+      <p>peperoni</p>
+    </ion-item>
+    
+    
+  </ion-list>
+
+</ion-content>
